@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>六角拼拼h5小游戏</title>
+<meta name="keywords" content="六角拼拼手机小游戏,六角拼拼h5小游戏"/>
+<meta name="description" content="六角拼拼h5小游戏"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="full-screen" content="yes"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta name="x5-fullscreen" content="true"/>
+<meta name="360-fullscreen" content="true"/>
+<style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    </style>
+</head>
+<body style="padding:0; margin: 0; background: #FFFFFF;" align="center">
+<div style="display:none"><img src="logo.jpg" /></div>
+<script type="text/javascript" src="play_sdk.js"></script>
+<script type="text/javascript" src="js/play68.js"></script>
+<div style="align:center;display: none"><img src="res/share.png" width="10%" /></div>
+<div id="loadingImg" style="top:35%;width: 100%;position:absolute; ">
+<div id="logoImg" style="align:center;display: none">
+<img src="res/logo.png" width="60%" />
+</div>
+<div style="margin-top:10%">
+<img src="res/loading.gif" width="7%" height="7%" />
+</div>
+</div>
+<canvas id="gameCanvas" width="720" height="1280"></canvas>
+<script cocos src="game.min.js"></script>
+<script>
+    var game_max_score = 11895;
+</script>
+
+</body>
+</html>

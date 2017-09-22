@@ -1,46 +1,28 @@
 # Basic
-title: 潘柏信
+title: 王谦益
 subtitle: 个人站
 description: 欢迎来到我的个人站~
 # 头像里面的标题
-avatarTitle: leopardpan
+avatarTitle: lynnhuel
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
-
+avatarDesc: Linux运维
+url: "http://52wcf.me"
+destination: C:\Users\Administrator\Desktop\blog\52wcf
 # Comment
 comment:
-    disqus: leopard
-    # uyan: 2143225  # 有言id,登录有言官网申请
+    uyan: 2144957  # 有言id,登录有言官网申请
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo: 3188096734
+    github: lynnhuel
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: lynn@52wcf.me
 
-# 百度统计 
+# 百度统计
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: 8ba1c6be0953b6f9c2ba38e57f615421  
-
-# Google Analytics
-# 使用博客模板请去掉或者更换 id
-ga:
-    id: UA-84134159-3   
-    host: auto  
-
-
-# 《----------------- 上面的信息修改成你自己的 ---------------------------》
-#
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
-#
-#
-# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
-
+    id: f990df2ac7cb1d28477ca797cf9ec076 
 
 permalink: /:year/:month/:title/
 # Format
@@ -49,7 +31,7 @@ highlighter: rouge
 textColor: #FF0000
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+cover_color: slate
 
 # The blog button should not be removed.
 blog_button:
