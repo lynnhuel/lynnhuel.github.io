@@ -10,8 +10,8 @@ url: "http://52wcf.me"
 destination: C:\Users\Administrator\Desktop\blog\52wcf
 # Comment
 comment:
-    disqus: 52wcf
-    #uyan: 2144957  # 有言id,登录有言官网申请
+    #disqus: 52wcf
+    uyan: 2144957  # 有言id,登录有言官网申请
 
 # Social
 social:
