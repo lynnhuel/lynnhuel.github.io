@@ -9,7 +9,7 @@ tag: linux
 ### 工作模式 ###  
 
 |模式|描述|图示|
-|-|---|----------|
+|-|-|-|
 |prefork：|多进程I/O模型，每个进程响应一个请求，默认模型一个主进程：生成和回收n个子进程， 创建套接字，不响应请求多个子进程：工作work进程，每个子进程处理一个请求；系统初始时，预先生成多个空闲进程，等待请求，最大不超过1024个|![prefork](http://52wcf.me/images/httpd/prefork.png)|
 |worker：|复用的多进程I/O模型,多进程多线程， IIS使用此模型一个主进程： 生成m个子进程，每个子进程负责生个n个线程，每个线程响应一个请求，并发响应请求： m*n|![worker](http://52wcf.me/images/httpd/worker.png)|
 |event：|事件驱动模型（worker模型的变种）一个主进程：生成m个子进程，每个进程直接响应n个请求，并发响应请求： m*n，有专门的线程来管理这些keep-alive类型的线程，当有真实请求时， 将请求传递给服务线程，执行完毕后，又允许释放。这样增强了高并发场景下的请求处理能力|![event](http://52wcf.me/images/httpd/event.png)|
@@ -120,10 +120,52 @@ Allow from, Deny from
 
 	格式： Alias /URL/ "/PATH/"
 		DocumentRoot "/www/htdocs"
+			举例：
 			http://www.magedu.com/download/bash.rpm
 			==>/www/htdocs/download/bash.rpm
+		
 		Alias /download/ "/rpms/pub/"
+			举例：
 			http://www.magedu.com/download/bash.rpm
 			==>/rpms/pub/bash.rpm
 			http://www.magedu.com/images/logo.png
 			==>/www/htdocs/images/logo.png
+
+
+### 用户权限管理 ###
+
+
+### 虚拟主机 ###
+
+#### FQDN方式 ####
+
+2.4版本以前： NameVirtualHost *:80
+
+	<virtualhost *:80>
+	documentroot /app/site1
+	servername www.a.com
+	errorlog logs/a.com.errlog
+	customlog logs/a.com.accesslog +日志格式
+	</virtualhost>
+
+	<virtualhost *:80>
+	documentroot /app/site2
+	servername www.b.com
+	errorlog logs/b.com.errlog
+	customlog logs/b.com.accesslog +日志格式
+	</virtualhost>
+
+	<virtualhost *:80>
+	documentroot /app/site3
+	servername www.c.com
+	errorlog logs/c.com.errlog
+	customlog logs/c.com.accesslog +日志格式
+	</virtualhost>
+
+日志格式可以参考这个博客：[http的log格式](http://52wcf.me/2017/10/http_log)
+
+#### 多端口方式 ####
+
+listen监听多端口，然后virtualhost绑定指定端口
+
+#### 多端口方式 ####
