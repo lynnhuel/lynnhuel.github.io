@@ -162,7 +162,7 @@ Allow from, Deny from
 	customlog logs/c.com.accesslog +日志格式
 	</virtualhost>
 
-日志格式可以参考这个博客：[http的log格式](http://52wcf.me/2017/10/http_log)
+日志格式可以参考这个博客：[http的log格式](http://52wcf.me/2017/10/httpd_log)
 
 #### 多端口方式 ####
 
