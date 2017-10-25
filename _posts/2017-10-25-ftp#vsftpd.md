@@ -42,7 +42,7 @@ File Transfer Protocol 早期的三个应用级协议之一
 配置文件:`/etc/vsftpd/vsftpd.conf`
 
 |配置项|描述|
-|-|-|
+|-|:--|
 |配置FTP服务以非独立服务方运行|listen=NO，默认为独立方式|
 |命令端口|listen_port=21|
 |主动模式端口|connect_from_port_20=YES   //主动模式端口为20<br>ftp_data_port=20   //指定主动模式的端口|
@@ -56,7 +56,7 @@ File Transfer Protocol 早期的三个应用级协议之一
 |目录访问提示|dirmessage_enable=YES (默认)<br>message_file=.message(默认)信息存放在指定目录下.message|
 |是否启用控制用户登录的列表文件|userlist_enable=YES 默认有此设置<br>userlist_deny=YES(默认值)黑名单,不提示口令， NO为白名单<br>userlist_file=/etc/vsftpd/users_list 此为默认值|
 |连接限制|max_clients=0 最大并发连接数<br>max_per_ip=0 每个IP同时发起的最大连接数|
-|vsftpd服务指定用户身份运行|<br>nopriv_user=nobody|
+|vsftpd服务指定用户身份运行|nopriv_user=nobody|
 |传输速率： 字节/秒|anon_max_rate=0 匿名用户的最大传输速率<br>local_max_rate=0 本地用户的最大传输速率|
 |连接时间：|秒为单位<br>connect_timeout=60 主动模式数据连接超时时长<br>accept_timeout=60 被动模式数据连接超时时长<br>data_connection_timeout=300 数据连接无数据输超时时长<br>idle_session_timeout=60 无命令操作超时时长
 |优先以文本方式传输|ascii_upload_enable=YES<br>ascii_download_enable=YES|
