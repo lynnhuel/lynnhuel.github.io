@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "linux-ftp服务搭建与配置"
-date: 2017/10/25 19:37:13  
+date: 2017/10/25  
 description: "本文介绍FTP服务的搭建和配置"
 tag: linux
 --- 
