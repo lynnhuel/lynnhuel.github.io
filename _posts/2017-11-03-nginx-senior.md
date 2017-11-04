@@ -114,7 +114,7 @@ Nginx运行状态， StubStatus模块获取Nginx自启动的工作状态（编�
 
 访问： http://IP/NginxStatus  测试
 
-![nginx监控](/images/nginx/监控.png,"nginx监控图")
+![nginx监控](/images/nginx/监控.png "nginx监控图")
 
 #### nginx状态页面各段含义 ####
 
@@ -129,7 +129,7 @@ Waiting： 等待其发出请求的空闲连接数量。
 
 ### 加密的https链接 ###
 
-![nginx https](/images/nginx/ssl.png,"nginx-https配置")
+![nginx https](/images/nginx/ssl.png "nginx-https配置")
 
 > ssl_certificate file;   #证书文件路径；  
 > ssl_certificate_key file;  #证书对应的私钥文件；  
