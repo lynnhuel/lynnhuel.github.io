@@ -15,21 +15,21 @@ tag: linux
 1、 根据不同客户端进行重定向， 实现请求分离
 
 	if ($http_user_agent ~ “MSIE”) {
-	rewrite ^(.*)$ /mobile/$1 break;
+		rewrite ^(.*)$ /mobile/$1 break;
 	} 
 	#在server段配置， 用户用IE浏览器访问， 路由请求到/mobile/目录下
 
 2、 对于不存在的页面， 强行跳转到提示页面
 
 	if (!-e $request_filename) {
-	rewrite ^(.*)$ /404.html break;
+		rewrite ^(.*)$ /404.html break;
 	} 
 	#在server段配置， 当用户访问的页面不存在时， 跳转到提示页面
 
 3、 抵挡恶意攻击重定向
 
 	if ($http_user_agent ~ "ApacheBench") {
-	rewrite ^(.*)$ /404.html break;
+		rewrite ^(.*)$ /404.html break;
 	}
 	#对于用户agent进行判断， 如果是不合理agent， 可直接跳转到处理页面， 也可以return直接
 	返回代码。
@@ -37,7 +37,7 @@ tag: linux
 4、 实现url域名跳转
 
 	if ($http_user_agent ~ "MSIE") {
-	rewrite ^(.*)$ http://www.magedu.com/$1 redirect;
+		rewrite ^(.*)$ http://www.magedu.com/$1 redirect;
 	} 
 	#对于IE浏览器的用户， 跳转到新的域名站点
 
@@ -112,7 +112,7 @@ Nginx运行状态， StubStatus模块获取Nginx自启动的工作状态（编�
 		auth_basic_user_file ../htpasswd;  #用来认证的密码文件 
 	}
 
-访问： http://IP/NginxStatus  测试
+访问： http://IP/status  测试
 
 ![nginx监控](/images/nginx/监控.png)
 
