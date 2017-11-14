@@ -35,8 +35,8 @@ tag: 负载均衡与高可用
 
 |机器名称|IP配置|服务角色|备注|
 |-|-|-|-|
-|lvs-server|VIP:172.17.100.1<br>DIP:192.168.100.1|负载均衡器<br>主服务器|开启路由功能（VIP桥接、DIP仅主机模式）<br>配置keepalived|
-|lvs-backup|VIP:172.17.100.1<br>DIP:192.168.100.2|负载均衡器<br>从服务器|开启路由功能（VIP桥接、DIP仅主机模式）<br>配置keepalived|
+|keep-server|VIP:172.17.100.1<br>DIP:192.168.100.1|负载均衡器<br>主服务器|开启路由功能（VIP桥接、DIP仅主机模式）<br>配置keepalived|
+|keep-backup|VIP:172.17.100.1<br>DIP:192.168.100.2|负载均衡器<br>从服务器|开启路由功能（VIP桥接、DIP仅主机模式）<br>配置keepalived|
 |rs1|RIP：192.168.100.3|后端nginx服务器|网关指向DIP|
 |rs1|RIP：192.168.100.4|后端nginx服务器|网关指向DIP|
 
