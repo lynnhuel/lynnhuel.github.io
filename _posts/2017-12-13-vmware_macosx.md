@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ubuntu中Vmware下mac os的安装小记"
-date: 2017/11/18
+date: 2017/12/13
 description: "ubuntu中Vmware下mac os的安装小记"
 tag: ubuntu
 ---
