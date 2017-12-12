@@ -21,6 +21,7 @@ VMware-Workstation-Full-14.0.0-6661328.x86_64.bundle
 #### problem1：  
 
 ![](http://images.cnitblog.com/blog/511414/201411/201411163594624.png)
+ 
 打开之后提示无法编译，点击install之后，显示失败。
 
 解决方法：   
