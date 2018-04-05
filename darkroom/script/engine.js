@@ -124,42 +124,7 @@
 			
 
 
-		$('<span><img src="微博1.png"> </span>')
-			.addClass('menuBtn')
-			.attr('id','sss1')
-			//.attr('src','微博1.png')
-			//.html("<p>test</p>")
-			//.html('<img scr="http://bynicki.com/Content/Google-logo.gif" />')
-			//.text('u77新浪微博')
-			.click(function() { window.open('http://www.dwz.cn/fd8Bo'); })
-			//.append('<a id="imalink" href="http://google.com" ><img scr="/img/微博1.png" /> </a>')
-			.appendTo(menu);
-		// $('<span> <img src="微博1.png" ></span>')
-		// 	.addClass('menuBtn')
-		// 	//.text('www dd')
-		// 	//.click(function() { window.open('http://www.u77.com'); })
-		// 	.appendTo(menu);
-		//$('<img scr="../img/微博1.png" />').prependTo('#sss1');
-		//$('#ss1').append('<a id="imalink" href="http://google.com" ><img scr="img/微博1.png" /> </a>');
-		$('<span><img src="腾讯1.png"> </span>')
-			.addClass('menuBtn')
-			.attr('src','腾讯1.png')
-			.attr('id','sss2')
-
-			//.text('QQ空间分享')
-			.click(function() { window.open('http://dwz.cn/u77_xhw'); })
-			.appendTo(menu);	
-		// $('<span>')
-		// 	.addClass('menuBtn')
-		// 	.text('app store.')
-		// 	.click(function() { window.open('https://itunes.apple.com/us/app/a-dark-room/id736683061'); })
-		// 	.appendTo(menu);	
-
-		$('<span><img src="u77logo.png" height="45px" > </span>')
-			.addClass('menuBtn')
-			//.text('u77.')u77logo.png
-			.click(function() { window.open('http://www.u77.com'); })
-			.appendTo(menu);
+		
 
 		
 		// Register keypress handlers
